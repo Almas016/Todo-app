@@ -1,0 +1,3 @@
+# Что бы подключиться к psql in docker
+# sudo docker exec -it 9ad8a9a054fd /bin/bash
+# \d -> все таблицы
