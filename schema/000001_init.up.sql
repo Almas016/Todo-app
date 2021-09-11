@@ -1,8 +1,9 @@
-CREATE Table users (
-  id serial not NULL UNIQUE,
-  name VARCHAR(255) not NULL,
-  surname VARCHAR(255) NOT NULL,
-  password_hash VARCHAR(255) not NULL
+CREATE TABLE users
+(
+    id            serial       not null unique,
+    name          varchar(255) not null,
+    username      varchar(255) not null unique,
+    password_hash varchar(255) not null
 );
 create table todo_lists (
   id serial not NULL UNIQUE,
